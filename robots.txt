@@ -1,0 +1,5 @@
+User-agent: [the name of the robot the following rule applies to]
+
+Disallow: [Assets/images]
+
+Allow: [the URL path in of a subdirectory, within a blocked parent directory, that you want to unblock]
