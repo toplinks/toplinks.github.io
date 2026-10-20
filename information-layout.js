@@ -1,0 +1,1 @@
+(()=>{const header=document.querySelector('.information-page>.header');if(!header)return;const update=()=>document.body.style.setProperty('--info-header-height',`${header.getBoundingClientRect().height}px`);update();if(typeof ResizeObserver!=='undefined')new ResizeObserver(update).observe(header);else window.addEventListener('resize',update);})();
