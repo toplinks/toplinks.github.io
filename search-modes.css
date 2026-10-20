@@ -1,0 +1,24 @@
+.search-modes{display:flex;gap:5px;margin:0 0 12px;padding-left:3px;flex-wrap:wrap}
+.search-modes button{display:flex;align-items:center;gap:7px;border:1px solid transparent;border-radius:9px;padding:8px 14px;background:transparent;color:var(--secondary);font-size:12px;font-weight:500;transition:background .15s,color .15s}
+.search-modes button:hover{background:var(--soft);color:var(--ink)}
+.search-modes button[aria-selected=true]{background:#e8efdf;border-color:#d4e0c8;color:#285b45;font-weight:600}
+.mode-symbol{font-size:15px;line-height:1}
+.mode-symbol{display:block;width:17px;height:17px;background:currentColor;mask:var(--mode-icon) center/contain no-repeat;-webkit-mask:var(--mode-icon) center/contain no-repeat}
+.engine-options{row-gap:5px;column-gap:4px}
+.engine-options label{gap:6px;padding:7px 9px;min-height:34px}
+.engine-options label input{position:absolute;opacity:0;width:1px;height:1px}
+.engine-options label:has(input:focus-visible){outline:2px solid var(--secondary);outline-offset:2px}
+.provider-icon{width:16px;height:16px;object-fit:contain;flex-shrink:0;border-radius:3px}
+.engine-options>.engine-caption{width:100%;margin-left:0;padding:3px 8px 0;color:var(--secondary)}
+.main-search .engine-mark{position:relative;border-radius:0;background:transparent;border:0;width:37px;height:37px;flex-basis:37px;box-shadow:none}
+.engine-mark img{width:25px;height:25px;position:relative;z-index:1;background:transparent}
+.engine-mark:has(img[hidden]):after{content:attr(data-initial);font-size:20px;font-weight:700;color:#285b45}
+.mode-shortcuts{display:flex;align-items:center;gap:8px;margin:12px 7px 0;flex-wrap:wrap;font-size:11px;color:var(--secondary)}
+.mode-shortcuts a{display:flex;align-items:center;gap:7px;color:var(--green);font-weight:500}
+.mode-shortcuts .shortcut-icon{display:block;width:17px;height:17px;background:currentColor;mask:url("data:image/svg+xml,%3Csvg%0A%20%20class%3D%22lucide%20lucide-view%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22currentColor%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Cpath%20d%3D%22M21%2017v2a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2v-2%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M21%207V5a2%202%200%200%200-2-2H5a2%202%200%200%200-2%202v2%22%20%2F%3E%0A%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%221%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M18.944%2012.33a1%201%200%200%200%200-.66%207.5%207.5%200%200%200-13.888%200%201%201%200%200%200%200%20.66%207.5%207.5%200%200%200%2013.888%200%22%20%2F%3E%0A%3C%2Fsvg%3E") center/contain no-repeat;-webkit-mask:url("data:image/svg+xml,%3Csvg%0A%20%20class%3D%22lucide%20lucide-view%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22currentColor%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Cpath%20d%3D%22M21%2017v2a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2v-2%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M21%207V5a2%202%200%200%200-2-2H5a2%202%200%200%200-2%202v2%22%20%2F%3E%0A%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%221%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M18.944%2012.33a1%201%200%200%200%200-.66%207.5%207.5%200%200%200-13.888%200%201%201%200%200%200%200%20.66%207.5%207.5%200%200%200%2013.888%200%22%20%2F%3E%0A%3C%2Fsvg%3E") center/contain no-repeat}
+.mode-shortcuts .shortcut-note{font-size:10px}
+:root[data-theme=dark] .provider-icon{background:#fff;box-shadow:0 0 0 3px #fff;border-radius:2px}
+:root[data-theme=dark] .engine-mark img[src*="unsplash"],:root[data-theme=dark] .engine-mark img[src*="pexels"],:root[data-theme=dark] .engine-mark img[src*="pixabay"],:root[data-theme=dark] .engine-mark img[src*="apple"]{filter:invert(1)}
+@media(max-width:700px){.engine-options label{min-height:36px;padding:7px 8px;font-size:11px}.provider-icon{width:15px;height:15px}.mode-shortcuts .shortcut-note{width:100%}.search-modes .mode-symbol{width:16px;height:16px}}
+:root[data-theme=dark] .search-modes button[aria-selected=true]{background:#171717;border-color:#363636;color:#fff}
+@media(max-width:700px){.search-modes{gap:3px;margin-bottom:10px}.search-modes button{padding:8px 10px;font-size:11px}}

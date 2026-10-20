@@ -1,0 +1,23 @@
+/* Only the original logo and time section exchange positions. */
+.header>.local-context{margin:0;min-height:52px;padding:10px 13px;gap:18px;font-size:11px;flex-wrap:nowrap}
+.header>.local-context #local-time{font-size:14px}
+.header>.local-context .context-date{gap:7px}
+.header>.local-context .context-location{gap:6px}
+.search-section>.header-brand-group{align-items:center;max-width:none;text-align:center;margin:0 auto 28px;gap:8px}
+.search-section>.header-brand-group .brand{font-size:25px;letter-spacing:-1.3px}
+.search-section>.header-brand-group .brand-icon{width:35px;height:35px;margin-right:10px}
+.search-section>.header-brand-group .brand-icon:before{width:29px;height:29px}
+.search-section>.header-brand-group .header-tagline{font-size:10px;max-width:none}
+@media(max-width:1050px){.header>.local-context{gap:10px;padding:9px 10px;font-size:10px}.header>.local-context .context-location small{display:none}}
+@media(max-width:700px){.header>.local-context{padding:0;min-height:0;gap:5px;border:0;display:block}.header>.local-context .context-date{display:grid;grid-template-columns:auto;gap:2px}.header>.local-context .context-dot{display:none}.header>.local-context #local-date{font-size:9px}.header>.local-context #local-time{font-size:12px}.header>.local-context .context-location{display:none}.search-section>.header-brand-group{margin-bottom:24px}.search-section>.header-brand-group .brand{font-size:21px}.search-section>.header-brand-group .header-tagline{font-size:10px}}
+
+/* Roomier borderless clock and a larger central brand. */
+.header>.local-context{border:0;border-radius:0;background:transparent;padding:0;flex:1;max-width:580px;min-height:52px;justify-content:flex-start;gap:32px;margin-right:32px}.header>.local-context .context-date{gap:12px}.header>.local-context .context-location{gap:8px}.search-section{margin-top:88px}.search-section>.header-brand-group{margin:0 auto 58px;gap:13px}.search-section>.header-brand-group .brand{font-size:48px;letter-spacing:-2px}.search-section>.header-brand-group .brand-icon{width:54px;height:54px;margin-right:13px}.search-section>.header-brand-group .brand-icon:before{width:49px;height:49px}.search-section>.header-brand-group .header-tagline{font-size:12px;letter-spacing:.2px}@media(max-width:1050px){.header>.local-context{gap:24px;margin-right:24px}.header>.local-context .context-date{gap:9px}}@media(max-width:700px){.header>.local-context{margin-right:12px;flex:1;min-height:0}.search-section{margin-top:58px}.search-section>.header-brand-group{margin-bottom:40px;gap:10px}.search-section>.header-brand-group .brand{font-size:39px;letter-spacing:-1.5px}.search-section>.header-brand-group .brand-icon{width:44px;height:44px;margin-right:10px}.search-section>.header-brand-group .brand-icon:before{width:40px;height:40px}.search-section>.header-brand-group .header-tagline{font-size:10px}}
+
+
+/* Keep the centered brand spacious without pushing useful links too far down. */
+.search-section{margin-top:66px}@media(max-width:700px){.search-section{margin-top:44px}}
+
+
+.search-section>.header-brand-group .header-tagline{display:block;white-space:nowrap;text-align:center;max-width:none;box-sizing:content-box}
+

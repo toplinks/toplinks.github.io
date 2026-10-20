@@ -1,0 +1,76 @@
+.quick-section{margin-top:48px;padding:34px 23px 24px;border:1px solid var(--line);border-radius:14px;background:transparent}
+.useful-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:19px}
+.quick-section .section-label{margin:0;font-size:10px;letter-spacing:1.6px}
+.useful-sort{display:flex;align-items:center;gap:9px;color:var(--secondary);font-size:11px}
+.useful-sort select{border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink);font-size:11px;padding:7px 27px 7px 10px;min-height:32px}
+.quick-links a{gap:9px;justify-content:flex-start;padding:11px 13px}
+.shortcut-logo{display:grid;place-items:center;width:21px;height:21px;flex:0 0 21px;font-size:12px;font-weight:600;border-radius:4px}
+.shortcut-logo img{width:19px;height:19px;object-fit:contain;border-radius:3px}
+.shortcut-name{flex:1;min-width:0;overflow-wrap:anywhere}
+.website-logo:has(img:not([hidden])) .logo-fallback{display:none}
+.generic-site-icon{display:block;width:18px;height:18px;background:currentColor;mask:url("data:image/svg+xml,%3Csvg%0A%20%20class%3D%22lucide%20lucide-globe%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22currentColor%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2210%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M12%202a14.5%2014.5%200%200%200%200%2020%2014.5%2014.5%200%200%200%200-20%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M2%2012h20%22%20%2F%3E%0A%3C%2Fsvg%3E") center/contain no-repeat;-webkit-mask:url("data:image/svg+xml,%3Csvg%0A%20%20class%3D%22lucide%20lucide-globe%22%0A%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20width%3D%2224%22%0A%20%20height%3D%2224%22%0A%20%20viewBox%3D%220%200%2024%2024%22%0A%20%20fill%3D%22none%22%0A%20%20stroke%3D%22currentColor%22%0A%20%20stroke-width%3D%222%22%0A%20%20stroke-linecap%3D%22round%22%0A%20%20stroke-linejoin%3D%22round%22%0A%3E%0A%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2210%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M12%202a14.5%2014.5%200%200%200%200%2020%2014.5%2014.5%200%200%200%200-20%22%20%2F%3E%0A%20%20%3Cpath%20d%3D%22M2%2012h20%22%20%2F%3E%0A%3C%2Fsvg%3E") center/contain no-repeat}
+.site-icon img{width:25px;height:25px;object-fit:contain;border-radius:4px}
+:root[data-theme=dark] .website-logo img{background:#fff;padding:2px;border-radius:4px}
+.quick-links .visit-count{display:grid;place-items:center;min-width:19px;height:19px;padding:0 4px;border-radius:5px;background:var(--surface);color:var(--secondary);font-size:10px;font-weight:400}
+.quick-links a>span:last-child{margin-left:0}
+#useful-visit-note{margin:13px 0 0;color:var(--secondary);font-size:10px;line-height:1.6}
+.directory{margin-top:30px;border-top:1px solid var(--line)}
+@media(max-width:700px){.quick-section{margin-top:34px;padding:27px 14px 20px}.useful-heading{margin-bottom:15px}.useful-sort{font-size:10px;gap:6px}.useful-sort select{font-size:10px;padding:6px 20px 6px 8px}.quick-links a{gap:5px}.quick-links .visit-count{font-size:9px;min-width:16px;height:16px}.directory{margin-top:25px}}
+
+/* Directory category icons share a consistent outline vocabulary. */
+.cat-symbol{display:inline-flex;align-items:center;justify-content:center;flex:0 0 18px}.cat-symbol svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.category-name{min-width:0;text-align:left;line-height:1.4}.category{gap:9px}.category .count{flex-shrink:0}.load-more{display:block;margin:28px auto 0;padding:13px 22px;border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--ink);font-weight:600}.load-more:hover{border-color:var(--green)}
+
+/* Colorful icons and a category rail that follows the directory scroll. */
+.cat-symbol{color:var(--category-color)}.category.active .cat-symbol{color:var(--category-color);filter:brightness(1.65) saturate(.8)}.sidebar{position:sticky;top:20px;align-self:start;max-height:calc(100dvh - 40px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--line) transparent;padding-right:5px}.directory-source{font-size:11px;line-height:1.7;color:var(--muted);margin:22px 0}.directory-source a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){.sidebar{top:0;z-index:5;max-height:none;overflow:visible;background:var(--bg);padding:9px 0 0;border-bottom:1px solid var(--line);margin-bottom:20px}.sidebar .categories{margin-bottom:0}.category-name{white-space:nowrap}}
+
+.footer{flex-wrap:wrap}.developer-credit{flex-basis:100%;text-align:center;font-size:11px;line-height:1.7;padding-top:16px;border-top:1px solid var(--line);color:var(--secondary)}.developer-credit strong{font-weight:600;color:var(--ink);letter-spacing:.35px}
+
+
+.footer-pages{display:flex;flex-basis:100%;justify-content:center;align-items:center;gap:22px;flex-wrap:wrap;font-size:11px;padding-top:4px}
+
+
+.popular-note{font-size:11px;line-height:1.6;color:var(--secondary);margin:0 0 16px}
+
+
+/* Compact alphabetical category navigation. */
+.sidebar .section-label{margin-bottom:12px}.sidebar .categories{gap:2px}.sidebar .category{padding:7px 9px;gap:8px;min-height:32px;font-size:11px;border-radius:6px}.sidebar .category-name{line-height:1.3}.sidebar .cat-symbol{flex-basis:16px;width:16px}.sidebar .cat-symbol svg{width:16px;height:16px}.sidebar .category .count{font-size:9px}.sidebar .category:nth-child(2){margin-bottom:7px}@media(max-width:700px){.sidebar .categories{gap:6px;padding-bottom:9px}.sidebar .category{padding:7px 10px;min-height:32px}.sidebar .category:nth-child(2){margin-bottom:0}}
+
+
+/* Keep the initial directory short while retaining the complete catalog. */
+@media(min-width:701px){.sidebar{max-height:min(440px,calc(100dvh - 40px))}.sidebar .section-label{position:sticky;top:0;z-index:1;background:var(--bg);padding:2px 0 9px;margin-bottom:3px}.sidebar{scrollbar-gutter:stable}}
+
+
+/* Slightly larger type for comfortable directory browsing. */
+.sidebar .category{font-size:12px}.sidebar .category .count{font-size:10px}.card h4{font-size:15px}.card .description{font-size:12px;line-height:1.7}.card .card-bottom{font-size:10px}.results-toolbar label,.results-toolbar select{font-size:12px}@media(max-width:700px){.card h4{font-size:14px}.card .description{font-size:11px}.card .card-bottom{font-size:9px}}
+
+
+/* Twenty category rows are visible on desktop; remaining categories scroll. */
+@media(min-width:701px){.sidebar{max-height:none;height:auto;overflow:visible;padding-right:0}.sidebar .section-label{position:static;padding:0;margin-bottom:12px}.sidebar .categories{max-height:678px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--line) transparent;scrollbar-gutter:stable;padding-right:5px;gap:2px}.sidebar .category{height:32px;min-height:32px;flex-shrink:0;padding-top:4px;padding-bottom:4px}.sidebar .category-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.sidebar .category:nth-child(2){margin-bottom:0}}
+
+
+.directory-controls{display:flex;align-items:center;gap:20px}.results-toolbar{height:auto;min-height:30px;gap:12px}.directory-controls label{white-space:nowrap}.directory-controls #columns{min-width:40px;border:1px solid var(--line);border-radius:6px;padding:5px 6px;color:var(--ink);background:var(--bg)}@media(min-width:701px){.cards{grid-template-columns:repeat(var(--directory-columns,3),minmax(0,1fr))}}@media(max-width:700px){.directory-controls .column-control{display:none}.directory-controls{gap:10px}}
+
+
+/* Display twenty-five category rows before scrolling. */
+@media(min-width:701px){.sidebar .categories{max-height:848px}}
+
+
+.category-flag{display:block;width:18px;height:auto;border-radius:2px;flex-shrink:0}.category[data-category='Bangladesh'].active .cat-symbol{filter:none}
+
+
+/* Responsive grid controls remain available on phones. */
+.directory-controls{gap:14px;flex-wrap:wrap;justify-content:flex-end}.directory-controls #page-size{min-width:48px;border:1px solid var(--line);border-radius:6px;padding:5px 6px;color:var(--ink);background:var(--bg)}.cards{grid-template-columns:repeat(var(--directory-columns,3),minmax(0,1fr))}@media(max-width:700px){.results-toolbar{flex-wrap:wrap;align-items:flex-start;gap:14px}.directory-controls{width:100%;justify-content:flex-start;gap:10px 16px}.directory-controls .column-control{display:inline-flex;align-items:center}.directory-controls label,.directory-controls select{font-size:11px}.cards{grid-template-columns:repeat(var(--directory-columns,2),minmax(0,1fr))}}
+
+
+/* Shared floating directory controls for desktop and mobile. */
+.directory-sticky{position:sticky;top:0;z-index:16;background:var(--bg);padding:12px 0 13px;border-bottom:1px solid var(--line);box-shadow:0 7px 15px #00000008;margin-bottom:20px}.directory-sticky .directory-filter{margin:0 0 12px}.directory-sticky .results-toolbar{margin:0;min-height:30px}.directory-sticky .directory-controls{gap:12px 18px}.directory-sticky .directory-filter .search-box{max-width:none}.directory-layout>.sidebar{top:calc(var(--directory-sticky-height,120px) + 12px)}@media(min-width:701px){.sidebar .categories{max-height:min(848px,calc(100dvh - var(--directory-sticky-height,120px) - 65px))}}@media(max-width:700px){.directory-sticky{padding:10px 0 12px;margin-bottom:10px}.directory-sticky .directory-filter{display:block;margin-bottom:10px}.directory-sticky .directory-filter>label{font-size:11px;margin-bottom:7px}.directory-sticky .directory-filter input{height:36px}.directory-sticky .results-toolbar{gap:8px}.directory-sticky .directory-controls{gap:8px 13px}.directory-layout>.sidebar{top:var(--directory-sticky-height,160px);z-index:15;padding-top:8px}}
+
+
+/* A quiet green wash gives the useful links their own surface. */
+.quick-section{background:radial-gradient(ellipse at 0 0,rgba(184,209,155,.19),transparent 64%),linear-gradient(120deg,rgba(255,255,255,.42),rgba(222,234,210,.25) 65%,rgba(244,247,236,.25))}:root[data-theme=dark] .quick-section{background:radial-gradient(ellipse at 0 0,rgba(255,255,255,.055),transparent 65%),linear-gradient(120deg,#080808,#030303 70%,#000)}
+
+
+/* Match the directory controls divider to the footer's lighter rule. */
+.directory-sticky{border-bottom:1px solid color-mix(in srgb,var(--line) 65%,transparent);box-shadow:none}
+
