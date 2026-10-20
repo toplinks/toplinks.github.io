@@ -1,4 +1,4 @@
-> Studio now starts with a GitHub token sign-in screen at `studio.html`. A successful repository write-access check opens the editor. Sign out or reload clears the in-memory token. Existing local drafts remain on this device; download/import tools are available after connecting. The catalog and application source remain public.
+> Studio now starts with a GitHub token sign-in screen at `studio.html`. A successful repository write-access check opens the editor. The token is kept in tab session storage so refresh restores the connection. Sign out clears it. Browser session restoration may also restore the token. Existing local drafts remain on this device; download/import tools are available after connecting. The catalog and application source remain public.
 
 # GitHub-only setup
 
@@ -19,12 +19,12 @@ Open `studio.html`, edit entries, then choose **Download JSON**. Replace catalog
 ## Commit from the admin page
 
 1. Create a fine-grained personal access token on GitHub. Select **only this repository**, set an expiration, and grant **Contents: read and write**. GitHub includes the needed metadata access. You must already have write access to the repository. Organization policies may require token approval.
-2. Open studio.html through the published HTTPS site or your trusted local preview. In **Connect to GitHub**, enter the token. It is held only in the tab's JavaScript memory, sent only to `api.github.com`, and cleared on disconnect or page exit. Never put it into a source file, JSON catalog, URL, issue, or commit.
+2. Open studio.html through the published HTTPS site or your trusted local preview. In **Connect to GitHub**, enter the token. It is saved in the tab’s session storage to survive refresh, sent only to `api.github.com`, and cleared on disconnect or page exit. Never put it into a source file, JSON catalog, URL, issue, or commit.
 3. Connecting loads the current repository catalog. The editor asks before replacing an existing local draft. You can download your draft first.
 4. Add/edit/remove websites and categories, reassign websites when removing a used category, and edit/reorder Useful Sites. Changes are saved locally as a draft, not published immediately.
 5. Choose **Review & commit**, inspect the change counts and target branch, then commit. GitHub enforces the token's repository permissions. If someone changed the catalog meanwhile, the editor refuses to overwrite it; download your draft, reconnect, and merge the latest changes.
 
-The editor does not store the token in local storage, session storage, cookies, the catalog, or the repository. Local storage contains catalog drafts and ordinary site preferences only. The admin URL is public; its visibility is not an access-control mechanism. Only a GitHub-authorized user can commit.
+The editor stores the token in session storage for this browser tab, accessible to scripts on the same origin. It is not stored in local storage, cookies, the catalog, or the repository. Sign out on shared devices; browser session restoration may preserve session storage. Local storage contains catalog drafts and ordinary site preferences only. The admin URL is public; its visibility is not an access-control mechanism. Only a GitHub-authorized user can commit.
 
 ## Review website suggestions
 
