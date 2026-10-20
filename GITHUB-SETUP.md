@@ -1,3 +1,5 @@
+> Shared traffic counters are enabled only on the published homepage: Busuanzi for page views and whos.amung.us for estimated online visitors. Local previews do not contact these providers. This is the one external-service exception to GitHub-based management.
+
 > Studio now starts with a GitHub token sign-in screen at `studio.html`. A successful repository write-access check opens the editor. The token is kept in tab session storage so refresh restores the connection. Sign out clears it. Browser session restoration may also restore the token. Existing local drafts remain on this device; download/import tools are available after connecting. The catalog and application source remain public.
 
 # GitHub-only setup
