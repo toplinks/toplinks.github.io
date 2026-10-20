@@ -36,3 +36,5 @@
 
 /* Balanced link mark, shared across all brand placements. */
 .brand .brand-icon:before{mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22m9%2015%206-6%22%2F%3E%3Cpath%20d%3D%22m10.5%206.5%201.4-1.4a5%205%200%200%201%207%207l-1.4%201.4M13.5%2017.5l-1.4%201.4a5%205%200%200%201-7-7l1.4-1.4%22%2F%3E%3C%2Fsvg%3E");-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22m9%2015%206-6%22%2F%3E%3Cpath%20d%3D%22m10.5%206.5%201.4-1.4a5%205%200%200%201%207%207l-1.4%201.4M13.5%2017.5l-1.4%201.4a5%205%200%200%201-7-7l1.4-1.4%22%2F%3E%3C%2Fsvg%3E");mask-size:contain;mask-repeat:no-repeat;mask-position:center;transform:none}.brand .brand-icon{align-self:center}
+
+.header nav .topbar-login[hidden]{display:none}
