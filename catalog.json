@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-22T07:28:16.128Z",
+  "updatedAt": "2026-10-22T09:43:30.986Z",
   "categories": [
     {
       "id": "productivity",
@@ -9374,8 +9374,8 @@
       "url": "https://github.com/"
     },
     {
-      "name": "Google Drive",
-      "url": "https://drive.google.com/"
+      "name": "Passgen.co",
+      "url": "https://passgen.co/?pw=12&s=1&a=1"
     },
     {
       "name": "ChatGPT",
