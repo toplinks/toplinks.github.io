@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-22T09:43:30.986Z",
+  "updatedAt": "2026-10-23T08:14:28.848Z",
   "categories": [
     {
       "id": "productivity",
@@ -9346,8 +9346,8 @@
       "url": "https://messenger.com/"
     },
     {
-      "name": "PayForex",
-      "url": "https://www.payforex.net/login"
+      "name": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/"
     },
     {
       "name": "Photo Replicate",
